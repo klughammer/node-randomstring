@@ -1,4 +1,4 @@
 .DS_Store
 *.log
 node_modules
-.tm_properies
+.tm_properties

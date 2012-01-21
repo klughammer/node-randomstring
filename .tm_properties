@@ -1,0 +1,3 @@
+include  = "{.tm_properties,.gitignore,.gitmodules}"
+tabSize  = 4
+softTabs = true

@@ -1,12 +1,12 @@
 {
     "name": "randomstring",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Elias Klughammer <elias.klughammer@me.com> (http://www.elias.kg)",
     "description": "A module for generating random strings",
     "homepage": "https://github.com/eliaskg/node-randomstring",
     "repository": {
         "type": "git",
-        "url": "git://github.com/felixge/node-mysql.git"
+        "url": "git://github.com/eliaskg/node-randomstring.git"
     },
     "main": "./index",
     "engines": {

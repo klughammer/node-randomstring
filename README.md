@@ -8,7 +8,7 @@ To install randomstring, use [npm](http://github.com/isaacs/npm):
 
 ## Usage
 
-```
+```javascript
 var randomstring = require("randomstring");
 
 randomstring.generate();
@@ -16,7 +16,6 @@ randomstring.generate();
 
 randomstring.generate(7);
 // >> "xqm5wXX"
-
 ```
 
 ## LICENSE

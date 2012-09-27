@@ -6,7 +6,7 @@
     "homepage": "https://github.com/eliaskg/node-randomstring",
     "repository": {
         "type": "git",
-        "url": "git://github.com/eliaskg/node-randomstring.git"
+        "url": "https://github.com/klughammer/node-randomstring"
     },
     "main": "./index",
     "engines": {

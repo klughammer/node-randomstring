@@ -6,7 +6,7 @@
     "homepage": "https://github.com/klughammer/node-randomstring",
     "repository": {
         "type": "git",
-        "url": "https://github.com/klughammer/node-randomstring"
+        "url": "git://github.com/klughammer/node-randomstring.git"
     },
     "main": "./index",
     "engines": {

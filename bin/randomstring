@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var rs = require('..')
+
+var n = process.argv[2] ? parseFloat(process.argv[2]) : undefined
+
+console.log(rs.generate(n))

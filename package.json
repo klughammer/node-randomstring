@@ -11,5 +11,6 @@
   "main": "./index",
   "engines": {
     "node": "*"
-  }
+  },
+  "bin": "bin/randomstring"
 }

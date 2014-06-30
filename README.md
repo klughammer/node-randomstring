@@ -16,6 +16,9 @@ randomstring.generate();
 
 randomstring.generate(7);
 // >> "xqm5wXX"
+
+randomstring.generate(9, "0123456789abcdefghiklmnopqrstuvwxyz");
+// >> "hf752sd9j"
 ```
 
 ## LICENSE

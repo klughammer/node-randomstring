@@ -20,6 +20,13 @@ randomstring.generate(7);
 // >> "xqm5wXX"
 ```
 
+## Tests
+
+```
+npm install
+npm test
+```
+
 ## LICENSE
 
 node-randomstring is licensed under the MIT license.

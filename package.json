@@ -11,5 +11,11 @@
   "main": "./index",
   "engines": {
     "node": "*"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }

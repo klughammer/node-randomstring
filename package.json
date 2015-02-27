@@ -1,12 +1,12 @@
 {
-  "name": "randomstring",
+  "name": "randomstring-ng",
   "version": "1.0.4",
   "author": "Elias Klughammer <elias@klughammer.com> (http://www.klughammer.com)",
   "description": "A module for generating random strings",
-  "homepage": "https://github.com/klughammer/node-randomstring",
+  "homepage": "https://github.com/janoskk/node-randomstring",
   "repository": {
     "type": "git",
-    "url": "git://github.com/klughammer/node-randomstring.git"
+    "url": "git://github.com/janoskk/node-randomstring.git"
   },
   "main": "./index",
   "engines": {

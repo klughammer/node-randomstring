@@ -5,13 +5,13 @@
 To install randomstring, use [npm](http://github.com/npm/npm):
 
 ```
-npm install randomstring --save
+npm install randomstring-ng --save
 ```
 
 ## Usage
 
 ```javascript
-var randomstring = require("randomstring");
+var randomstring = require("randomstring-ng");
 
 randomstring.generate();
 // >> "XwPp9xazJ0ku5CZnlmgAx2Dld8SHkAeT"
@@ -32,7 +32,7 @@ npm test
 
 ## Command Line Usage
 
-    $ npm install -g randomstring
+    $ npm install -g randomstring-ng
 
     $ randomstring
     sKCx49VgtHZ59bJOTLcU0Gr06ogUnDJi

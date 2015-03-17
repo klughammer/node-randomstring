@@ -1,4 +1,5 @@
-# node-randomstring
+node-randomstring [![Build Status](https://travis-ci.org/janoskk/node-randomstring.svg?branch=master)](https://travis-ci.org/janoskk/node-randomstring)
+=================
 
 ## Installation
 

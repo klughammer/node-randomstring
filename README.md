@@ -5,7 +5,7 @@
 To install randomstring, use [npm](http://github.com/npm/npm):
 
 ```
-npm install randomstring --save
+npm install randomstring
 ```
 
 ## Usage

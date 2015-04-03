@@ -1,3 +1,7 @@
+1.0.5 / Apr 03, 2015
+==================
+  * Better charset setting → Less error-proneness
+
 1.0.4 / Apr 03, 2015
 ==================
   * Added tests

@@ -1,10 +1,12 @@
 # node-randomstring
 
 ## Installation
-    
-To install randomstring, use [npm](http://github.com/isaacs/npm):
 
-    $ npm install randomstring
+To install randomstring, use [npm](http://github.com/npm/npm):
+
+```
+npm install randomstring
+```
 
 ## Usage
 
@@ -16,6 +18,13 @@ randomstring.generate();
 
 randomstring.generate(7);
 // >> "xqm5wXX"
+```
+
+## Tests
+
+```
+npm install
+npm test
 ```
 
 ## LICENSE

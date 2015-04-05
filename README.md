@@ -1,5 +1,7 @@
 # node-randomstring
 
+[![Build Status](https://travis-ci.org/klughammer/node-randomstring.svg?branch=master)](https://travis-ci.org/klughammer/node-randomstring)
+
 ## Installation
 
 To install randomstring, use [npm](http://github.com/npm/npm):

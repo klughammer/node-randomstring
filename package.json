@@ -1,6 +1,6 @@
 {
   "name": "randomstring",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Elias Klughammer <elias@klughammer.com> (http://www.klughammer.com)",
   "description": "A module for generating random strings",
   "homepage": "https://github.com/klughammer/node-randomstring",

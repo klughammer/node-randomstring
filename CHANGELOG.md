@@ -1,3 +1,8 @@
+1.0.6 / Jun 01, 2015
+==================
+  * Added licence for npmjs.org
+  * Enhanced readme for Github and npm
+
 1.0.5 / Apr 03, 2015
 ==================
   * Better charset setting → Less error-proneness

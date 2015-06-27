@@ -6,7 +6,9 @@ var random = require("..").generate
 describe("randomstring.generate()", function() {
 
   it("returns a string", function() {
-    assert.equal(typeof(random()), "string")
+    var rds = random();
+    assert.equal(typeof(rds), "string");
+    console.log("          String return: " + rds);
   })
 
   it("defaults to 32 characters in length", function() {

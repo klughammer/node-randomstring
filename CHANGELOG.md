@@ -1,3 +1,7 @@
+1.0.7 / Jul 03, 2015
+==================
+  * Use node.crypto instead of Math.random as random number generator
+
 1.0.6 / Jun 01, 2015
 ==================
   * Added licence for npmjs.org

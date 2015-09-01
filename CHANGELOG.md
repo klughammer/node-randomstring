@@ -1,3 +1,7 @@
+1.0.8 / Sep 01, 2015
+==================
+  * Avoid problems if crypto.randomBytes throws an exception
+
 1.0.7 / Jul 03, 2015
 ==================
   * Use node.crypto instead of Math.random as random number generator

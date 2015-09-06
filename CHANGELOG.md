@@ -1,3 +1,8 @@
+1.1.0 / Sep 06, 2015
+==================
+  * Added support for custom character sets
+  * Added option for excluding poorly readable characters
+
 1.0.8 / Sep 01, 2015
 ==================
   * Avoid problems if crypto.randomBytes throws an exception

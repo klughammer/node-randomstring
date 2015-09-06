@@ -3,12 +3,11 @@
 var assert = require("assert");
 var random = require("..").generate;
 
-describe("randomstring.generate()", function() {
+describe("randomstring.generate(options)", function() {
 
   it("returns a string", function() {
     var rds = random();
     assert.equal(typeof(rds), "string");
-    console.log("          String return: " + rds);
   });
 
   it("defaults to 32 characters in length", function() {

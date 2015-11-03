@@ -1,3 +1,6 @@
+1.1.3 / Nov 03, 2015
+  * Fixed test
+
 1.1.2 / Nov 03, 2015
   * Added command line support
   * Fixed bug causing the "readable" option to fail

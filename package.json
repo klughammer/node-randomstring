@@ -18,5 +18,6 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha"
-  }
+  },
+  "bin": "bin/randomstring"
 }

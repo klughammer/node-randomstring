@@ -49,6 +49,19 @@ randomstring.generate({
     - `hex` - [0-9 a-f]
     - `custom` - any given characters
 
+## Command Line Usage
+
+    $ npm install -g randomstring
+
+    $ randomstring
+    > sKCx49VgtHZ59bJOTLcU0Gr06ogUnDJi
+
+    $ randomstring 7
+    > CpMg433
+    
+    $ randomstring length=24 charset=github readable
+    > hthbtgiguihgbuttuutubugg
+
 ## Tests
 
 ```

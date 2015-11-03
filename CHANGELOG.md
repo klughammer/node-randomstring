@@ -1,3 +1,7 @@
+1.1.2 / Nov 03, 2015
+  * Added command line support
+  * Fixed bug causing the "readable" option to fail
+
 1.1.0 / Sep 06, 2015
 ==================
   * Added support for custom character sets

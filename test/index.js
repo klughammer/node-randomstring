@@ -49,7 +49,7 @@ describe("randomstring.generate(options)", function() {
   
   it("accepts readable option", function() {
     var testData = random({ length: 24700, readable: true });
-    var search = testData.search(/[0OIl]/ig);
+    var search = testData.search(/[0OIl]/g);
     assert.equal(search, -1);
   });
 

@@ -2,6 +2,7 @@
 
 var assert = require("assert");
 var random = require("..").generate;
+var testLength = 24700;
 
 describe("randomstring.generate(options)", function() {
 
@@ -23,32 +24,32 @@ describe("randomstring.generate(options)", function() {
   });
   
   it("accepts 'numeric' as charset option", function() {
-    var testData = random({ length: 24700, charset: 'numeric' });
+    var testData = random({ length: testLength, charset: 'numeric' });
     var search = testData.search(/\D/ig);
     assert.equal(search, -1);
   });
   
   it("accepts 'alphabetic' as charset option", function() {
-    var testData = random({ length: 24700, charset: 'alphabetic' });
+    var testData = random({ length: testLength, charset: 'alphabetic' });
     var search = testData.search(/\d/ig);
     assert.equal(search, -1);
   });
   
   it("accepts 'hex' as charset option", function() {
-    var testData = random({ length: 24700, charset: 'hex' });
+    var testData = random({ length: testLength, charset: 'hex' });
     var search = testData.search(/[^0-9a-f]/ig);
     assert.equal(search, -1);
   });
   
   it("accepts custom charset", function() {
     var charset = "abc";
-    var testData = random({ length: 24700, charset: charset });
+    var testData = random({ length: testLength, charset: charset });
     var search = testData.search(/[^abc]/ig);
     assert.equal(search, -1);
   });
   
   it("accepts readable option", function() {
-    var testData = random({ length: 24700, readable: true });
+    var testData = random({ length: testLength, readable: true });
     var search = testData.search(/[0OIl]/g);
     assert.equal(search, -1);
   });

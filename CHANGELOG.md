@@ -1,6 +1,6 @@
 1.1.4 / Feb 10, 2016
 ==================
-  * Added option for capitalisation
+  * Added option for capitalization
 
 1.1.3 / Nov 03, 2015
 ==================

@@ -54,14 +54,14 @@ describe("randomstring.generate(options)", function() {
     assert.equal(search, -1);
   });
   
-  it("accepts 'uppercase' as capitalisation option", function() {
-    var testData = random({ length: testLength, capitalisation: 'uppercase'});
+  it("accepts 'uppercase' as capitalization option", function() {
+    var testData = random({ length: testLength, capitalization: 'uppercase'});
     var search = testData.search(/[a-z]/g);
     assert.equal(search, -1);
   });
   
-  it("accepts 'lowercase' as capitalisation option", function() {
-    var testData = random({ length: testLength, capitalisation: 'lowercase'});
+  it("accepts 'lowercase' as capitalization option", function() {
+    var testData = random({ length: testLength, capitalization: 'lowercase'});
     var search = testData.search(/[A-Z]/g);
     assert.equal(search, -1);
   });

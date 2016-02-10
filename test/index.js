@@ -52,5 +52,17 @@ describe("randomstring.generate(options)", function() {
     var search = testData.search(/[0OIl]/g);
     assert.equal(search, -1);
   });
+  
+  it("accepts 'uppercase' as capitalisation option", function() {
+    var testData = random({ length: testLength, capitalisation: 'uppercase'});
+    var search = testData.search(/[a-z]/g);
+    assert.equal(search, -1);
+  });
+  
+  it("accepts 'lowercase' as capitalisation option", function() {
+    var testData = random({ length: testLength, capitalisation: 'lowercase'});
+    var search = testData.search(/[A-Z]/g);
+    assert.equal(search, -1);
+  });
 
 });

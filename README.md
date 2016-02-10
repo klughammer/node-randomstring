@@ -48,6 +48,9 @@ randomstring.generate({
     - `numeric` - [0-9]
     - `hex` - [0-9 a-f]
     - `custom` - any given characters
+  - `capitalisation` - define whether the output should be lowercase / uppercase only. (default: null) [OPTIONAL]
+    - `lowercase`
+    - `uppercase`
 
 ## Command Line Usage
 

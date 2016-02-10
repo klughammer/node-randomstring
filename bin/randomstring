@@ -22,6 +22,12 @@ for (var i = 2, ii = process.argv.length; i < ii; i++) {
     if (charset)
       options.charset = charset;
   }
+  else if (arg.search('capitalisation') >= 0) {
+    var capitalisation = arg.split('=')[1];
+    
+    if (capitalisation)
+      options.capitalisation = capitalisation;
+  }
   // If only a number is given as an arg, parse it as the length
   else if (arg.search(/\D/ig) < 0) {
     options.length = parseInt(arg);

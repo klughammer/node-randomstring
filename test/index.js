@@ -66,4 +66,35 @@ describe("randomstring.generate(options)", function() {
     assert.equal(search, -1);
   });
 
+  it("returns unique strings", function() {
+    var results = {};
+    for (var i = 0; i < 1000; i++) {
+      var s = random();
+      assert.notEqual(results[s], true);
+      results[s] = true;
+    }
+    return true;
+  });
+
+  it("returns unbiased strings", function() {
+    var charset = 'abcdefghijklmnopqrstuvwxyz';
+    var slen = 100000;
+    var s = random({ charset: charset, length: slen });
+    var counts = {};
+    for (var i = 0; i < s.length; i++) {
+      var c = s.charAt(i);
+      if (typeof counts[c] === "undefined") {
+        counts[c] = 0;
+      } else {
+        counts[c]++;
+      }
+    }
+    var avg = slen / charset.length;
+    Object.keys(counts).sort().forEach(function(k) {
+      var diff = counts[k] / avg;
+      assert(diff > 0.95 && diff < 1.05,
+             "bias on `" + k + "': expected average is " + avg + ", got " + counts[k]);
+    });
+  });
+
 });

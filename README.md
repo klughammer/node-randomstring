@@ -17,19 +17,19 @@ npm install randomstring
 ```javascript
 var randomstring = require("randomstring");
 
-randomstring.generate();
+randomstring();
 // >> "XwPp9xazJ0ku5CZnlmgAx2Dld8SHkAeT"
 
-randomstring.generate(7);
+randomstring(7);
 // >> "xqm5wXX"
 
-randomstring.generate({
+randomstring({
   length: 12,
   charset: 'alphabetic'
 });
 // >> "AqoTIzKurxJi"
 
-randomstring.generate({
+randomstring({
   charset: 'abc'
 });
 // >> "accbaabbbbcccbccccaacacbbcbbcbbc"
@@ -37,9 +37,7 @@ randomstring.generate({
 
 ## API
 
-`randomstring.`
-
-- `generate(options)`
+- `randomstring(options)`
   - `length` - the length of the random string. (default: 32) [OPTIONAL]
   - `readable` - exclude poorly readable chars: 0OIl. (default: false) [OPTIONAL]
   - `charset` - define the character set for the string. (default: 'alphanumeric') [OPTIONAL]
@@ -61,7 +59,7 @@ randomstring.generate({
 
     $ randomstring 7
     > CpMg433
-    
+
     $ randomstring length=24 charset=github readable
     > hthbtgiguihgbuttuutubugg
 

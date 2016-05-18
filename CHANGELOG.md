@@ -1,3 +1,7 @@
+1.1.5 / May 18, 2016
+==================
+  * Optimized character generation algorithm
+
 1.1.4 / Feb 10, 2016
 ==================
   * Added option for capitalization

@@ -41,7 +41,7 @@ randomstring.generate({
 
 - `generate(options)`
   - `length` - the length of the random string. (default: 32) [OPTIONAL]
-  - `readable` - exclude poorly readable chars: 0OIl. (default: false) [OPTIONAL]
+  - `readable` - exclude poorly readable chars: 0OoIl. (default: false) [OPTIONAL]
   - `charset` - define the character set for the string. (default: 'alphanumeric') [OPTIONAL]
     - `alphanumeric` - [0-9 a-z A-Z]
     - `alphabetic` - [a-z A-Z]

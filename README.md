@@ -47,6 +47,8 @@ randomstring.generate({
     - `alphabetic` - [a-z A-Z]
     - `numeric` - [0-9]
     - `hex` - [0-9 a-f]
+    - `binary` - [01]
+    - `octal` - [0-7]
     - `custom` - any given characters
   - `capitalization` - define whether the output should be lowercase / uppercase only. (default: null) [OPTIONAL]
     - `lowercase`
@@ -61,7 +63,7 @@ randomstring.generate({
 
     $ randomstring 7
     > CpMg433
-    
+
     $ randomstring length=24 charset=github readable
     > hthbtgiguihgbuttuutubugg
 

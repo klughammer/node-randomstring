@@ -13,7 +13,8 @@
     "node": "*"
   },
   "dependencies": {
-    "array-uniq": "1.0.2"  
+    "array-uniq": "1.0.2",
+    "randombytes": "2.0.3"
   },
   "devDependencies": {
     "mocha": "^1.20.1"

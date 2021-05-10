@@ -1,3 +1,9 @@
+1.2.0 / May 10, 2021
+==================
+  * Use randombytes instead of node.crypto to prevent biased output
+  * Add support for async generation
+  * Support for binary and octal charsets
+
 1.1.5 / May 18, 2016
 ==================
   * Optimized character generation algorithm

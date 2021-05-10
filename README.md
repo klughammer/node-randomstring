@@ -33,24 +33,32 @@ randomstring.generate({
   charset: 'abc'
 });
 // >> "accbaabbbbcccbccccaacacbbcbbcbbc"
+
+randomstring.generate({
+  charset: 'abc'
+}, cb);
+// >> "cb(generatedString) {}"
+
 ```
 
 ## API
 
 `randomstring.`
 
-- `generate(options)`
-  - `length` - the length of the random string. (default: 32) [OPTIONAL]
-  - `readable` - exclude poorly readable chars: 0OIl. (default: false) [OPTIONAL]
-  - `charset` - define the character set for the string. (default: 'alphanumeric') [OPTIONAL]
-    - `alphanumeric` - [0-9 a-z A-Z]
-    - `alphabetic` - [a-z A-Z]
-    - `numeric` - [0-9]
-    - `hex` - [0-9 a-f]
-    - `custom` - any given characters
-  - `capitalization` - define whether the output should be lowercase / uppercase only. (default: null) [OPTIONAL]
-    - `lowercase`
-    - `uppercase`
+- `generate(options, cb)`
+  - `options`
+    - `length` - the length of the random string. (default: 32) [OPTIONAL]
+    - `readable` - exclude poorly readable chars: 0OIl. (default: false) [OPTIONAL]
+    - `charset` - define the character set for the string. (default: 'alphanumeric') [OPTIONAL]
+      - `alphanumeric` - [0-9 a-z A-Z]
+      - `alphabetic` - [a-z A-Z]
+      - `numeric` - [0-9]
+      - `hex` - [0-9 a-f]
+      - `custom` - any given characters
+    - `capitalization` - define whether the output should be lowercase / uppercase only. (default: null) [OPTIONAL]
+      - `lowercase`
+      - `uppercase`
+  - `cb` - Optional.  If provided uses async version of `crypto.randombytes`
 
 ## Command Line Usage
 

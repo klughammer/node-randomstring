@@ -37,12 +37,6 @@ describe("randomstring.generate(options)", function() {
     });
   });
 
-  it("accepts 'numeric' as charset option", function() {
-    var testData = random({ length: testLength, charset: 'numeric' });
-    var search = testData.search(/\D/ig);
-    assert.equal(search, -1);
-  });
-
   it("accepts 'numeric' as charset option async", function(done) {
     random({ length: testLength, charset: 'numeric' }, function(err, testData) {
       assert.equal(testData.length, testLength);
@@ -51,13 +45,7 @@ describe("randomstring.generate(options)", function() {
       done();
     });
   });
-
-  it("accepts 'alphabetic' as charset option", function() {
-    var testData = random({ length: testLength, charset: 'alphabetic' });
-    var search = testData.search(/\d/ig);
-    assert.equal(search, -1);
-  });
-
+  
   it("accepts 'alphabetic' as charset option async", function(done) {
     var testData = random({ length: testLength, charset: 'alphabetic' }, function(err, testData) {
       var search = testData.search(/\d/ig);
@@ -69,6 +57,18 @@ describe("randomstring.generate(options)", function() {
   it("accepts 'hex' as charset option", function() {
     var testData = random({ length: testLength, charset: 'hex' });
     var search = testData.search(/[^0-9a-f]/ig);
+    assert.equal(search, -1);
+  });
+  
+  it("accepts 'binary' as charset option", function() {
+    var testData = random({ length: testLength, charset: 'binary' });
+    var search = testData.search(/[^01]/ig);
+    assert.equal(search, -1);
+  });
+
+  it("accepts 'octal' as charset option", function() {
+    var testData = random({ length: testLength, charset: 'octal' });
+    var search = testData.search(/[^0-7]/ig);
     assert.equal(search, -1);
   });
 
@@ -87,7 +87,7 @@ describe("randomstring.generate(options)", function() {
       done();
     });
   });
-
+  
   it("accepts readable option", function() {
     var testData = random({ length: testLength, readable: true });
     var search = testData.search(/[0OIl]/g);

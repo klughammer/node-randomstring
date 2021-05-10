@@ -1,3 +1,7 @@
+1.2.1 / May 10, 2021
+==================
+  * Fixed tests
+
 1.2.0 / May 10, 2021
 ==================
   * Use randombytes instead of node.crypto to prevent biased output

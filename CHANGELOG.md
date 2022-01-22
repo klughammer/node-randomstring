@@ -1,3 +1,7 @@
+1.2.2 / Jan 22, 2022
+==================
+  * Fixed browser support
+
 1.2.1 / May 10, 2021
 ==================
   * Fixed tests

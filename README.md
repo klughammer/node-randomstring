@@ -37,7 +37,7 @@ randomstring.generate({
 randomstring.generate({
   charset: 'abc'
 }, cb);
-// >> "cb(generatedString) {}"
+// >> "cb(null, generatedString) {}"
 
 ```
 

@@ -1,3 +1,8 @@
+1.2.3 / Oct 20, 2022
+==================
+  * Fixed React support
+  * Fixed unexpected behavior of length option
+
 1.2.2 / Jan 22, 2022
 ==================
   * Fixed browser support

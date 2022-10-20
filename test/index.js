@@ -24,10 +24,12 @@ describe("randomstring.generate(options)", function() {
 
   it("accepts length as an optional first argument", function() {
     assert.equal(random(10).length, 10);
+    assert.equal(random(0).length, 0);
   });
 
   it("accepts length as an option param", function() {
     assert.equal(random({ length: 7 }).length, 7);
+    assert.equal(random({ length: 0 }).length, 0);
   });
 
   it("accepts length as an option param async", function(done) {

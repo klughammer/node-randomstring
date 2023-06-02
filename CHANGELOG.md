@@ -1,3 +1,7 @@
+1.3.0 / Jun 02, 2023
+==================
+  * Added support for multiple character sets
+
 1.2.3 / Oct 20, 2022
 ==================
   * Fixed React support

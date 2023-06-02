@@ -90,6 +90,22 @@ describe("randomstring.generate(options)", function() {
     });
   });
   
+  it("accepts an array of charsets", function() {
+    var charset = ['alphabetic', '!'];
+    var testData = random({ length: testLength, charset: charset });
+    var search = testData.search(/[^A-Za-z!]/ig);
+    assert.equal(search, -1);
+  });
+  
+  it("accepts an array of charsets async", function(done) {
+    var charset = ['alphabetic', '!'];
+    random({ length: testLength, charset: charset }, function(err, testData) {
+      var search = testData.search(/[^A-Za-z!]/ig);
+      assert.equal(search, -1);
+      done();
+    });
+  });
+  
   it("accepts readable option", function() {
     var testData = random({ length: testLength, readable: true });
     var search = testData.search(/[0OIl]/g);

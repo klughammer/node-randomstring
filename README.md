@@ -35,6 +35,11 @@ randomstring.generate({
 // >> "accbaabbbbcccbccccaacacbbcbbcbbc"
 
 randomstring.generate({
+  charset: ['numeric', '!']
+});
+// >> "145132!87663611567!2486211!07856"
+
+randomstring.generate({
   charset: 'abc'
 }, cb);
 // >> "cb(generatedString) {}"
@@ -57,6 +62,7 @@ randomstring.generate({
       - `binary` - [01]
       - `octal` - [0-7]
       - `custom` - any given characters
+      - `[]` -  An array of any above
     - `capitalization` - define whether the output should be lowercase / uppercase only. (default: null) [OPTIONAL]
       - `lowercase`
       - `uppercase`

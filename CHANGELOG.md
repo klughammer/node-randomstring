@@ -1,6 +1,7 @@
 1.3.0 / Jun 02, 2023
 ==================
   * Added support for multiple character sets
+  * Removed dependency on array-uniq
 
 1.2.3 / Oct 20, 2022
 ==================

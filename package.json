@@ -13,7 +13,7 @@
     "node": "*"
   },
   "dependencies": {
-    "randombytes": "2.0.3"
+    "randombytes": "2.1.0"
   },
   "devDependencies": {
     "mocha": "^10.0.0"

@@ -1,3 +1,7 @@
+1.3.1 / Jan 10, 2025
+==================
+  * Updated randombytes
+
 1.3.0 / Jun 02, 2023
 ==================
   * Added support for multiple character sets
